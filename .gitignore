@@ -1,0 +1,6 @@
+Pangolin/
+build/
+**/build/
+**/*.so
+datasets/
+.vscode/
