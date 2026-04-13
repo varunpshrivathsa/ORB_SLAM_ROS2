@@ -1,0 +1,15 @@
+In file included from [01m[K/workspace/ORB_SLAM3/include/Frame.h:30[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/ImuTypes.h:29:10:[m[K [01;31m[Kfatal error: [m[Ksophus/se3.hpp: No such file or directory
+   29 | #include [01;31m[K<sophus/se3.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rgbd_node.dir/build.make:76: CMakeFiles/rgbd_node.dir/src/rgbd_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rgbd_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

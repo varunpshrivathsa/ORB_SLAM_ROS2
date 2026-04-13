@@ -1,0 +1,41 @@
+[0.000000] (-) TimerEvent: {}
+[0.000384] (orbslam_ros2) JobQueued: {'identifier': 'orbslam_ros2', 'dependencies': OrderedDict()}
+[0.000405] (orbslam_ros2) JobStarted: {'identifier': 'orbslam_ros2'}
+[0.003420] (orbslam_ros2) JobProgress: {'identifier': 'orbslam_ros2', 'progress': 'cmake'}
+[0.003723] (orbslam_ros2) Command: {'cmd': ['/usr/bin/cmake', '/workspace/ros2_ws/src/orbslam_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspace/ros2_ws/install/orbslam_ros2'], 'cwd': '/workspace/ros2_ws/build/orbslam_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'ee5d59ce55f0'), ('GIT_ASKPASS', '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('BROWSER', '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/bin/helpers/browser.sh'), ('HOME', '/root'), ('OLDPWD', '/workspace/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.111.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ddf38e42-17c6-40a6-9f61-c51175dd3456.sock'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/node'), ('LC_CTYPE', 'C.UTF-8'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-aec26ad6-2763-456f-a2e6-a20ee3fa1570.sock'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/root/.vscode-server/bin/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-aec26ad6-2763-456f-a2e6-a20ee3fa1570.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-4e0e8b010f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-aec26ad6-2763-456f-a2e6-a20ee3fa1570.sock'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspace/ros2_ws/build/orbslam_ros2'), ('COLCON', '1')]), 'shell': False}
+[0.040546] (orbslam_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.074803] (orbslam_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.079499] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099787] (-) TimerEvent: {}
+[0.121404] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.124989] (orbslam_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.125151] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.125370] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.127188] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.177258] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.181311] (orbslam_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.181494] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.181753] (orbslam_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.187470] (orbslam_ros2) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:12 (find_package):\n'}
+[0.187540] (orbslam_ros2) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[0.187596] (orbslam_ros2) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[0.187634] (orbslam_ros2) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[0.187670] (orbslam_ros2) StderrLine: {'line': b'\n'}
+[0.187705] (orbslam_ros2) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[0.187739] (orbslam_ros2) StderrLine: {'line': b'  any of the following names:\n'}
+[0.187771] (orbslam_ros2) StderrLine: {'line': b'\n'}
+[0.187804] (orbslam_ros2) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[0.187838] (orbslam_ros2) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[0.187875] (orbslam_ros2) StderrLine: {'line': b'\n'}
+[0.187898] (orbslam_ros2) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[0.187921] (orbslam_ros2) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[0.187943] (orbslam_ros2) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[0.187964] (orbslam_ros2) StderrLine: {'line': b'  has been installed.\n'}
+[0.187986] (orbslam_ros2) StderrLine: {'line': b'\n'}
+[0.188008] (orbslam_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[0.188030] (orbslam_ros2) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.188055] (orbslam_ros2) StdoutLine: {'line': b'See also "/workspace/ros2_ws/build/orbslam_ros2/CMakeFiles/CMakeOutput.log".\n'}
+[0.190589] (orbslam_ros2) CommandEnded: {'returncode': 1}
+[0.200707] (-) TimerEvent: {}
+[0.203175] (orbslam_ros2) JobEnded: {'identifier': 'orbslam_ros2', 'rc': 1}
+[0.213464] (-) EventReactorShutdown: {}

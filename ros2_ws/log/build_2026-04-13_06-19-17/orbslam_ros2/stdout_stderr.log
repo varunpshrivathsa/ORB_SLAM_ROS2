@@ -1,0 +1,951 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /workspace/ros2_ws/build/orbslam_ros2
+[ 50%] [32mBuilding CXX object CMakeFiles/rgbd_node.dir/src/rgbd_node.cpp.o[0m
+In file included from [01m[K/workspace/ORB_SLAM3/include/Frame.h:30[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/ImuTypes.h:[m[K In member function ‘[01m[Kvoid ORB_SLAM3::IMU::Preintegrated::printMeasurements() const[m[K’:
+[01m[K/workspace/ORB_SLAM3/include/ImuTypes.h:204:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ORB_SLAM3::IMU::Preintegrated::integrable>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  204 |         for(int i=0; [01;35m[Ki<mvMeasurements.size()[m[K; i++){
+      |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:[m[K At global scope:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:74:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                          [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:82:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::Flags & [01;35m[KAlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                                  [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:41[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/se3quat.h:43:38:[m[K [01;35m[Kwarning: [m[Kextra ‘[01m[K;[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
+   43 |       EIGEN_MAKE_ALIGNED_OPERATOR_NEW[01;35m[K;[m[K
+      |                                      [01;35m[K^[m[K
+      |                                      [31m[K-[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<3, Eigen::Matrix<double, 3, 1> >[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_sba.h:40:35:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<6, g2o::SE3Quat>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:59:33:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<6, g2o::SE3Quat, g2o::VertexSE3Expmap, g2o::VertexSE3Expmap>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:83:24:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:114:35:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<3, Eigen::Matrix<double, 3, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSE3Expmap>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:146:41:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:37[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h: In instantiation of ‘[01m[Kclass g2o::BaseVertex<7, g2o::Sim3>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:48:35:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_vertex.h:62:72:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   62 |     typedef Eigen::Map<Matrix<double, D, D>, Matrix<double,D,D>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned >  HessianBlockType;
+      |                                                                  [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<7, g2o::Sim3, g2o::VertexSim3Expmap, g2o::VertexSim3Expmap>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:99:27:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h: In instantiation of ‘[01m[Kclass g2o::BaseBinaryEdge<2, Eigen::Matrix<double, 2, 1>, g2o::VertexSBAPointXYZ, g2o::VertexSim3Expmap>[m[K’:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h:130:36:[m[K   required from here
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:59:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   59 |       typedef Eigen::Map<Matrix<double, Di, Dj>, Matrix<double, Di, Dj>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/types_six_dof_expmap.h:38[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Converter.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:33[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/Thirdparty/g2o/g2o/types/../core/base_binary_edge.h:60:80:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::AlignedBit[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   60 |       typedef Eigen::Map<Matrix<double, Dj, Di>, Matrix<double, Dj, Di>::[01;35m[KFlags & AlignedBit[m[K ? Aligned : Unaligned > HessianBlockTransposedType;
+      |                                                                          [01;35m[K~~~~~~^~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:161[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/LU:11[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/so2.hpp:12[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/se2.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/Thirdparty/Sophus/sophus/geometry.hpp:7[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Frame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:28[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/Constants.h:167:37:[m[K [01;36m[Knote: [m[Kdeclared here
+  167 | EIGEN_DEPRECATED const unsigned int [01;36m[KAlignedBit[m[K = 0x80;
+      |                                     [01;36m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pangolin/gl/gl.h:296[m[K,
+                 from [01m[K/usr/local/include/pangolin/handler/handler.h:31[m[K,
+                 from [01m[K/usr/local/include/pangolin/display/widgets.h:32[m[K,
+                 from [01m[K/usr/local/include/pangolin/pangolin.h:40[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Map.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrameDatabase.h:30[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:29[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlTexture::CopyFrom(const pangolin::GlTexture&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:335:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglCopyImageSubDataNV[m[K’ was not declared in this scope
+  335 |     [01;31m[KglCopyImageSubDataNV[m[K(tex.tid, GL_TEXTURE_2D, 0, 0, 0, 0,
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlRenderBuffer::Reinitialise(GLint, GLint, GLint)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:509:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteRenderbuffersEXT[m[K’ was not declared in this scope
+  509 |         [01;31m[KglDeleteRenderbuffersEXT[m[K(1, &rbid);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:514:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenRenderbuffersEXT[m[K’ was not declared in this scope
+  514 |     [01;31m[KglGenRenderbuffersEXT[m[K(1, &rbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:515:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindRenderbufferEXT[m[K’ was not declared in this scope
+  515 |     [01;31m[KglBindRenderbufferEXT[m[K(GL_RENDERBUFFER_EXT, rbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:516:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglRenderbufferStorageEXT[m[K’ was not declared in this scope
+  516 |     [01;31m[KglRenderbufferStorageEXT[m[K(GL_RENDERBUFFER_EXT, internal_format, width, height);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In destructor ‘[01m[Kpangolin::GlRenderBuffer::~GlRenderBuffer()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:523:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteRenderbuffersEXT[m[K’ was not declared in this scope
+  523 |         [01;31m[KglDeleteRenderbuffersEXT[m[K(1, &rbid);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In destructor ‘[01m[Kpangolin::GlFramebuffer::~GlFramebuffer()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:572:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteFramebuffersEXT[m[K’ was not declared in this scope
+  572 |         [01;31m[KglDeleteFramebuffersEXT[m[K(1, &fbid);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In constructor ‘[01m[Kpangolin::GlFramebuffer::GlFramebuffer(pangolin::GlTexture&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:579:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  579 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In constructor ‘[01m[Kpangolin::GlFramebuffer::GlFramebuffer(pangolin::GlTexture&, pangolin::GlRenderBuffer&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:587:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  587 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In constructor ‘[01m[Kpangolin::GlFramebuffer::GlFramebuffer(pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlRenderBuffer&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:596:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  596 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In constructor ‘[01m[Kpangolin::GlFramebuffer::GlFramebuffer(pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlRenderBuffer&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:606:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  606 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In constructor ‘[01m[Kpangolin::GlFramebuffer::GlFramebuffer(pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlTexture&, pangolin::GlRenderBuffer&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:617:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  617 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlFramebuffer::Bind() const[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:628:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindFramebufferEXT[m[K’ was not declared in this scope
+  628 |     [01;31m[KglBindFramebufferEXT[m[K(GL_FRAMEBUFFER_EXT, fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:629:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglDrawBuffers[m[K’ was not declared in this scope; did you mean ‘[01m[KglDrawBuffer[m[K’?
+  629 |     [01;31m[KglDrawBuffers[m[K( attachments, attachment_buffers );
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KglDrawBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlFramebuffer::Reinitialise()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:635:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteFramebuffersEXT[m[K’ was not declared in this scope
+  635 |         [01;31m[KglDeleteFramebuffersEXT[m[K(1, &fbid);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:637:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenFramebuffersEXT[m[K’ was not declared in this scope
+  637 |     [01;31m[KglGenFramebuffersEXT[m[K(1, &fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlFramebuffer::Unbind() const[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:642:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglDrawBuffers[m[K’ was not declared in this scope; did you mean ‘[01m[KglDrawBuffer[m[K’?
+  642 |     [01;31m[KglDrawBuffers[m[K( 1, attachment_buffers );
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KglDrawBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:643:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindFramebufferEXT[m[K’ was not declared in this scope
+  643 |     [01;31m[KglBindFramebufferEXT[m[K(GL_FRAMEBUFFER_EXT, 0);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[KGLenum pangolin::GlFramebuffer::AttachColour(pangolin::GlTexture&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:651:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindFramebufferEXT[m[K’ was not declared in this scope
+  651 |     [01;31m[KglBindFramebufferEXT[m[K(GL_FRAMEBUFFER_EXT, fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:652:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglFramebufferTexture2DEXT[m[K’ was not declared in this scope
+  652 |     [01;31m[KglFramebufferTexture2DEXT[m[K(GL_FRAMEBUFFER_EXT, color_attachment, GL_TEXTURE_2D, tex.tid, 0);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlFramebuffer::AttachDepth(pangolin::GlRenderBuffer&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:663:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindFramebufferEXT[m[K’ was not declared in this scope
+  663 |     [01;31m[KglBindFramebufferEXT[m[K(GL_FRAMEBUFFER_EXT, fbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:665:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglFramebufferRenderbufferEXT[m[K’ was not declared in this scope
+  665 |     [01;31m[KglFramebufferRenderbufferEXT[m[K(GL_FRAMEBUFFER_EXT, GL_DEPTH_ATTACHMENT_EXT, GL_RENDERBUFFER_EXT, rb.rbid);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Free()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:721:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteBuffers[m[K’ was not declared in this scope; did you mean ‘[01m[KglSelectBuffer[m[K’?
+  721 |         [01;31m[KglDeleteBuffers[m[K(1, &bo);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KglSelectBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Reinitialise(pangolin::GlBufferType, GLsizeiptr, GLenum, const void*)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:738:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglGenBuffers[m[K’ was not declared in this scope; did you mean ‘[01m[KglReadBuffer[m[K’?
+  738 |         [01;31m[KglGenBuffers[m[K(1, &bo);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[KglReadBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:746:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBufferData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  746 |     [01;31m[KglBufferData[m[K(buffer_type, size_bytes, data, gluse);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KGlBufferData[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Bind() const[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:752:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindBuffer[m[K’ was not declared in this scope; did you mean ‘[01m[KglReadBuffer[m[K’?
+  752 |     [01;31m[KglBindBuffer[m[K(buffer_type, bo);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KglReadBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Unbind() const[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:757:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindBuffer[m[K’ was not declared in this scope; did you mean ‘[01m[KglReadBuffer[m[K’?
+  757 |     [01;31m[KglBindBuffer[m[K(buffer_type, 0);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KglReadBuffer[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Upload(const GLvoid*, GLsizeiptr, GLintptr)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:767:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBufferSubData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  767 |     [01;31m[KglBufferSubData[m[K(buffer_type,offset,size_bytes,data);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[KGlBufferData[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBufferData::Download(GLvoid*, GLsizeiptr, GLintptr) const[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:774:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetBufferSubData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  774 |     [01;31m[KglGetBufferSubData[m[K(buffer_type, offset, size_bytes, data);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[KGlBufferData[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:[m[K In member function ‘[01m[Kvoid pangolin::GlBuffer::Resize(GLuint)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:850:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetBufferSubData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  850 |         [01;31m[KglGetBufferSubData[m[K(buffer_type, 0, backup_size_bytes, backup);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |         [32m[KGlBufferData[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:851:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglBufferData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  851 |         [01;31m[KglBufferData[m[K(buffer_type, new_num_elements*GlDataTypeBytes(datatype)*count_per_element, 0, gluse);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[KGlBufferData[m[K
+[01m[K/usr/local/include/pangolin/gl/gl.hpp:852:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglBufferSubData[m[K’ was not declared in this scope; did you mean ‘[01m[KGlBufferData[m[K’?
+  852 |         [01;31m[KglBufferSubData[m[K(buffer_type, 0, backup_size_bytes, backup);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KGlBufferData[m[K
+In file included from [01m[K/usr/local/include/pangolin/plot/plotter.h:37[m[K,
+                 from [01m[K/usr/local/include/pangolin/pangolin.h:48[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Map.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrameDatabase.h:30[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:29[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In static member function ‘[01m[Kstatic void pangolin::GlSlUtilities::UseNone()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:250:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglUseProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  250 |         [01;31m[KglUseProgram[m[K(0);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In function ‘[01m[Kbool pangolin::IsLinkSuccessPrintLog(GLhandleARB)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:339:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetProgramiv[m[K’ was not declared in this scope
+  339 |     [01;31m[KglGetProgramiv[m[K(prog, GL_LINK_STATUS, &status);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:345:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetProgramInfoLog[m[K’ was not declared in this scope
+  345 |         [01;31m[KglGetProgramInfoLog[m[K(prog, PROGRAM_LOG_MAX_LEN, &len, infolog);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/local/include/pangolin/plot/plotter.h:37[m[K,
+                 from [01m[K/usr/local/include/pangolin/pangolin.h:48[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Map.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrameDatabase.h:30[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/KeyFrame.h:29[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/MapPoint.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:24[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In function ‘[01m[Kbool pangolin::IsCompileSuccessPrintLog(GLhandleARB, const string&, const string&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:359:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetShaderiv[m[K’ was not declared in this scope
+  359 |     [01;31m[KglGetShaderiv[m[K(shader, GL_COMPILE_STATUS, &status);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:365:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetShaderInfoLog[m[K’ was not declared in this scope
+  365 |         [01;31m[KglGetShaderInfoLog[m[K(shader, SHADER_LOG_MAX_LEN, &len, infolog);
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In destructor ‘[01m[Kpangolin::GlSlProgram::~GlSlProgram()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:396:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  396 |         [01;31m[KglDeleteProgram[m[K(prog);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kbool pangolin::GlSlProgram::AddPreprocessedShader(pangolin::GlSlShaderType, const string&, const string&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:416:16:[m[K [01;31m[Kerror: [m[K‘[01m[KglCreateProgram[m[K’ was not declared in this scope
+  416 |         prog = [01;31m[KglCreateProgram[m[K();
+      |                [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:419:26:[m[K [01;31m[Kerror: [m[K‘[01m[KglCreateShader[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlVertexShader[m[K’?
+  419 |     GLhandleARB shader = [01;31m[KglCreateShader[m[K(shader_type);
+      |                          [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                          [32m[KGlSlVertexShader[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:421:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglShaderSource[m[K’ was not declared in this scope
+  421 |     [01;31m[KglShaderSource[m[K(shader, 1, &source, NULL);
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:422:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglCompileShader[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlComputeShader[m[K’?
+  422 |     [01;31m[KglCompileShader[m[K(shader);
+      |     [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |     [32m[KGlSlComputeShader[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:425:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglAttachShader[m[K’ was not declared in this scope
+  425 |         [01;31m[KglAttachShader[m[K(prog, shader);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::ClearShaders()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:519:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDetachShader[m[K’ was not declared in this scope
+  519 |         [01;31m[KglDetachShader[m[K(prog, shaders[i]);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:520:9:[m[K [01;31m[Kerror: [m[K‘[01m[KglDeleteShader[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlVertexShader[m[K’?
+  520 |         [01;31m[KglDeleteShader[m[K(shaders[i]);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+      |         [32m[KGlSlVertexShader[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kbool pangolin::GlSlProgram::Link()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:653:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglLinkProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  653 |     [01;31m[KglLinkProgram[m[K(prog);
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::Bind()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:660:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUseProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  660 |     [01;31m[KglUseProgram[m[K(prog);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SaveBind()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:666:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUseProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  666 |     [01;31m[KglUseProgram[m[K(prog);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::Unbind()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:671:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUseProgram[m[K’ was not declared in this scope; did you mean ‘[01m[KGlSlProgram[m[K’?
+  671 |     [01;31m[KglUseProgram[m[K(prev_prog);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[KGlSlProgram[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[KGLint pangolin::GlSlProgram::GetAttributeHandle(const string&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:676:12:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetAttribLocation[m[K’ was not declared in this scope
+  676 |     return [01;31m[KglGetAttribLocation[m[K(prog, name.c_str());
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[KGLint pangolin::GlSlProgram::GetUniformHandle(const string&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:681:12:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetUniformLocation[m[K’ was not declared in this scope
+  681 |     return [01;31m[KglGetUniformLocation[m[K(prog, name.c_str());
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, int)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:686:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform1i[m[K’ was not declared in this scope
+  686 |     [01;31m[KglUniform1i[m[K( GetUniformHandle(name), x);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, int, int)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:691:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform2i[m[K’ was not declared in this scope
+  691 |     [01;31m[KglUniform2i[m[K( GetUniformHandle(name), x1, x2);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, int, int, int)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:696:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform3i[m[K’ was not declared in this scope
+  696 |     [01;31m[KglUniform3i[m[K( GetUniformHandle(name), x1, x2, x3);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, int, int, int, int)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:701:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform4i[m[K’ was not declared in this scope
+  701 |     [01;31m[KglUniform4i[m[K( GetUniformHandle(name), x1, x2, x3, x4);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, float)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:706:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform1f[m[K’ was not declared in this scope
+  706 |     [01;31m[KglUniform1f[m[K( GetUniformHandle(name), f);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, float, float)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:711:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform2f[m[K’ was not declared in this scope
+  711 |     [01;31m[KglUniform2f[m[K( GetUniformHandle(name), f1,f2);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, float, float, float)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:716:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform3f[m[K’ was not declared in this scope
+  716 |     [01;31m[KglUniform3f[m[K( GetUniformHandle(name), f1,f2,f3);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, float, float, float, float)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:721:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform4f[m[K’ was not declared in this scope
+  721 |     [01;31m[KglUniform4f[m[K( GetUniformHandle(name), f1,f2,f3,f4);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, pangolin::Colour)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:726:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniform4f[m[K’ was not declared in this scope
+  726 |     [01;31m[KglUniform4f[m[K( GetUniformHandle(name), c.r, c.g, c.b, c.a);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetUniform(const string&, const pangolin::OpenGlMatrix&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:736:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglUniformMatrix4fv[m[K’ was not declared in this scope
+  736 |     [01;31m[KglUniformMatrix4fv[m[K( GetUniformHandle(name), 1, GL_FALSE, m);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::BindPangolinDefaultAttribLocationsAndLink()[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:793:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglBindAttribLocation[m[K’ was not declared in this scope
+  793 |     [01;31m[KglBindAttribLocation[m[K(prog, DEFAULT_LOCATION_POSITION, DEFAULT_NAME_POSITION);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[KGLint pangolin::GlSlProgram::GetProgramResourceIndex(const string&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:803:12:[m[K [01;31m[Kerror: [m[K‘[01m[KglGetProgramResourceIndex[m[K’ was not declared in this scope; did you mean ‘[01m[KGetProgramResourceIndex[m[K’?
+  803 |     return [01;31m[KglGetProgramResourceIndex[m[K(prog, GL_SHADER_STORAGE_BLOCK, name.c_str());
+      |            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |            [32m[KGetProgramResourceIndex[m[K
+[01m[K/usr/local/include/pangolin/gl/glsl.h:[m[K In member function ‘[01m[Kvoid pangolin::GlSlProgram::SetShaderStorageBlock(const string&, const int&)[m[K’:
+[01m[K/usr/local/include/pangolin/gl/glsl.h:808:5:[m[K [01;31m[Kerror: [m[K‘[01m[KglShaderStorageBlockBinding[m[K’ was not declared in this scope
+  808 |     [01;31m[KglShaderStorageBlockBinding[m[K(prog, GetProgramResourceIndex(name), bindingIndex);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/include/Atlas.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:[m[K In member function ‘[01m[Kvirtual bool ORB_SLAM3::Pinhole::matchAndtriangulate(const cv::KeyPoint&, const cv::KeyPoint&, ORB_SLAM3::GeometricCamera*, Sophus::SE3f&, Sophus::SE3f&, float, float, Eigen::Vector3f&)[m[K’:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:83:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   83 |         bool matchAndtriangulate([01;35m[Kconst cv::KeyPoint& kp1[m[K, const cv::KeyPoint& kp2, GeometricCamera* pOther,
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:83:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kkp2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, [01;35m[Kconst cv::KeyPoint& kp2[m[K, GeometricCamera* pOther,
+      |                                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:83:101:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpOther[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   83 |         bool matchAndtriangulate(const cv::KeyPoint& kp1, const cv::KeyPoint& kp2, [01;35m[KGeometricCamera* pOther[m[K,
+      |                                                                                    [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:84:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |                                  [01;35m[KSophus::SE3f& Tcw1[m[K, Sophus::SE3f& Tcw2,
+      |                                  [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:84:68:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KTcw2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   84 |                                  Sophus::SE3f& Tcw1, [01;35m[KSophus::SE3f& Tcw2[m[K,
+      |                                                      [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:85:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |                                  [01;35m[Kconst float sigmaLevel1[m[K, const float sigmaLevel2,
+      |                                  [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:85:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KsigmaLevel2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   85 |                                  const float sigmaLevel1, [01;35m[Kconst float sigmaLevel2[m[K,
+      |                                                           [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/Pinhole.h:86:51:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx3Dtriangulated[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   86 |                                  [01;35m[KEigen::Vector3f& x3Dtriangulated[m[K) { return false;}
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/include/Atlas.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>)[m[K’:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  102 |         const float [01;35m[Kprecision[m[K;
+      |                     [01;35m[K^~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+      |                          [01;35m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/include/Atlas.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:47:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   47 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters) : GeometricCamera(_vParameters), precision(1e-6), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/workspace/ORB_SLAM3/include/Atlas.h:27[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/FrameDrawer.h:25[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Viewer.h:23[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/Tracking.h:26[m[K,
+                 from [01m[K/workspace/ORB_SLAM3/include/System.h:31[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:14[m[K:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(std::vector<float>, float)[m[K’:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  102 |         const float [01;35m[Kprecision[m[K;
+      |                     [01;35m[K^~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+      |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:53:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   53 |         [01;35m[KKannalaBrandt8[m[K(const std::vector<float> _vParameters, const float _precision) : GeometricCamera(_vParameters),
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:[m[K In constructor ‘[01m[KORB_SLAM3::KannalaBrandt8::KannalaBrandt8(ORB_SLAM3::KannalaBrandt8*)[m[K’:
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:102:21:[m[K [01;35m[Kwarning: [m[K‘[01m[KORB_SLAM3::KannalaBrandt8::precision[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+  102 |         const float [01;35m[Kprecision[m[K;
+      |                     [01;35m[K^~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:88:26:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::vector<int> ORB_SLAM3::KannalaBrandt8::mvLappingArea[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   88 |         std::vector<int> [01;35m[KmvLappingArea[m[K;
+      |                          [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/workspace/ORB_SLAM3/include/CameraModels/KannalaBrandt8.h:59:9:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   59 |         [01;35m[KKannalaBrandt8[m[K(KannalaBrandt8* pKannala) : GeometricCamera(pKannala->mvParameters), precision(pKannala->precision), mvLappingArea(2,0) ,tvr(nullptr) {
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}; _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Alloc = std::allocator<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}][m[K’
+[01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >; _Args = {message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType> >}][m[K’
+[01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:48:43:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmessage_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >::Synchronizer(const message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:53[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:9[m[K:
+[01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:53:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessage_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >::Synchronizer(const message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> > > >&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   53 | class [01;36m[KSynchronizer[m[K : public noncopyable, public Policy
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:53:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmessage_filters::noncopyable::noncopyable(const message_filters::noncopyable&)[m[K’
+In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/subscriber.h:42[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:8[m[K:
+[01m[K/opt/ros/humble/include/message_filters/message_filters/connection.h:51:3:[m[K [01;36m[Knote: [m[Kdeclared here
+   51 |   [01;36m[Knoncopyable[m[K( const noncopyable& ) = delete;
+      |   [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:53[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:9[m[K:
+[01m[K/opt/ros/humble/include/message_filters/message_filters/synchronizer.h:53:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmessage_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>::Signal9(const message_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>&)[m[K’
+   53 | class [01;31m[KSynchronizer[m[K : public noncopyable, public Policy
+      |       [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/message_filters/message_filters/sync_policies/approximate_time.h:52[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:9[m[K:
+[01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:142:7:[m[K [01;36m[Knote: [m[K‘[01m[Kmessage_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>::Signal9(const message_filters::Signal9<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType, message_filters::NullType>&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+  142 | class [01;36m[KSignal9[m[K
+      |       [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/message_filters/message_filters/signal9.h:142:7:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex::mutex(const std::mutex&)[m[K’
+In file included from [01m[K/usr/include/c++/11/mutex:43[m[K,
+                 from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/workspace/ros2_ws/src/orbslam_ros2/src/rgbd_node.cpp:5[m[K:
+[01m[K/usr/include/c++/11/bits/std_mutex.h:94:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |     [01;36m[Kmutex[m[K(const mutex&) = delete;
+      |     [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/rgbd_node.dir/build.make:76: CMakeFiles/rgbd_node.dir/src/rgbd_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/rgbd_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

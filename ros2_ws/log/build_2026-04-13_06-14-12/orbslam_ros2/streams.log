@@ -1,0 +1,33 @@
+[0.004s] Invoking command in '/workspace/ros2_ws/build/orbslam_ros2': /usr/bin/cmake /workspace/ros2_ws/src/orbslam_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ros2_ws/install/orbslam_ros2
+[0.040s] -- The C compiler identification is GNU 11.4.0
+[0.074s] -- The CXX compiler identification is GNU 11.4.0
+[0.079s] -- Detecting C compiler ABI info
+[0.121s] -- Detecting C compiler ABI info - done
+[0.125s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.125s] -- Detecting C compile features
+[0.125s] -- Detecting C compile features - done
+[0.127s] -- Detecting CXX compiler ABI info
+[0.177s] -- Detecting CXX compiler ABI info - done
+[0.181s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.181s] -- Detecting CXX compile features
+[0.181s] -- Detecting CXX compile features - done
+[0.187s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[0.187s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.187s]   has asked CMake to find a package configuration file provided by
+[0.187s]   "ament_cmake", but CMake did not find one.
+[0.187s] 
+[0.187s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.187s]   any of the following names:
+[0.187s] 
+[0.187s]     ament_cmakeConfig.cmake
+[0.187s]     ament_cmake-config.cmake
+[0.187s] 
+[0.188s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.188s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.188s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.188s]   has been installed.
+[0.188s] 
+[0.188s] [0m
+[0.188s] -- Configuring incomplete, errors occurred!
+[0.188s] See also "/workspace/ros2_ws/build/orbslam_ros2/CMakeFiles/CMakeOutput.log".
+[0.190s] Invoked command in '/workspace/ros2_ws/build/orbslam_ros2' returned '1': /usr/bin/cmake /workspace/ros2_ws/src/orbslam_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/ros2_ws/install/orbslam_ros2
